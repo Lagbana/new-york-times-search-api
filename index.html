@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+
+
+    <title>NYT articles search</title>
+</head>
+
+<body>
+    <header class="jumbotron jumbotron-fluid nythead">
+        <div class="container">
+            <h1 class="display-4 text-center font-weight-bold">
+                <i class="far fa-newspaper"></i> New York Times Search
+            </h1>
+            <!-- <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p> -->
+        </div>
+    </header>
+    <main class='col-10 mx-auto'>
+        <section class="card">
+            <div class="card-header">
+                <strong><i class="fas fa-newspaper"></i> Search Parameters</strong>
+            </div>
+            <div class="card-body">
+                <form>
+                    <div class="form-group">
+                        <label for="search">Search Term:</label>
+                        <input id='search-term' type="text" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">Number of records to retrieve:</label>
+                        <select id='number-records' class="form-control" id="exampleFormControlSelect1">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="search">Start Year (Optional):</label>
+                        <input id='start-year' type='number' class="form-control" value="">
+                    </div>
+                    <div class="form-group">
+                        <label for="search">End Year (Optional):</label>
+                        <input id='end-year' type="number" class="form-control" value="">
+                    </div>
+
+                    <button type="submit" id="search-button" class="btn"> <i class="fas fa-search"></i> Search</button>
+
+                    <button type="submit" id="clear-results" class="btn"> <i class="fas fa-trash-alt"></i> Clear
+                        Results</button>
+                </form>
+            </div>
+        </section>
+        <section class="card mt-4 mb-4">
+            <div class="card-header col-12">
+                <strong><i class="fas fa-th"></i> Top Articles</strong>
+            </div>
+            <div class="card-body">
+                <article id='01' class='card'>
+                    Article 1...append data here <br>
+                    Article 1...append data here <br>
+                    Article 1...append data here <br>
+                </article>
+                <article id='02' class='card'>
+                    Article 2...append data here <br>
+                    Article 2...append data here <br>
+                    Article 2...append data here <br>
+                </article>
+                <article id='03' class='card'>
+                    Article 3...append data here <br>
+                    Article 3...append data here <br>
+                    Article 3...append data here <br>
+                </article>
+                <article id='04' class='card'>
+                    Article 4...append data here <br>
+                    Article 4...append data here <br>
+                    Article 4...append data here <br>
+                </article>
+                <article id='05' class='card'>
+                    Article 5...append data here <br>
+                    Article 5...append data here <br>
+                    Article 5...append data here <br>
+                </article>
+
+            </div>
+        </section>
+    </main>
+
+
+</body>
+
+</html>
